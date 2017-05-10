@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sample="http://schemas.android.com/apk/res-auto">
+
+    <com.pavelsikun.seekbarpreference.SeekBarPreferenceCompat
+        android:id="@+id/warning_seekbar"
+        android:key="warning"
+        android:title="Warning"
+        android:summary=""
+        android:enabled="true"
+        android:defaultValue="25"
+        style="@style/WarningSeekBar"
+
+        sample:msbp_minValue="10"
+        sample:msbp_maxValue="50"
+        sample:msbp_interval="5"
+        sample:msbp_measurementUnit="cm"
+        sample:msbp_dialogEnabled="true"/>
+
+    <com.pavelsikun.seekbarpreference.SeekBarPreferenceCompat
+        android:id="@+id/danger_seekbar"
+        android:key="danger"
+        android:title="Danger"
+        android:summary=""
+        android:enabled="true"
+        android:defaultValue="10"
+        android:theme="@style/DangerSeekBar"
+
+        sample:msbp_minValue="0"
+        sample:msbp_maxValue="50"
+        sample:msbp_interval="1"
+        sample:msbp_measurementUnit="cm"
+        sample:msbp_dialogEnabled="true"/>
+
+    <android.support.v7.preference.SwitchPreferenceCompat
+        android:key="enable_sound"
+        android:title="Sound"
+        android:summary=""
+        android:defaultValue="true"/>
+
+</android.support.v7.preference.PreferenceScreen>

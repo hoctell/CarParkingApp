@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cym.comp2222project.MainActivity">
+
+    <ImageView
+        android:id="@+id/car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="40%"
+        android:layout_centerInParent="true"
+        android:src="@drawable/car1"/>
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/car"
+        android:layout_centerHorizontal="true"
+        android:textSize="100sp"
+        android:text="0" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/distance"
+        android:layout_toRightOf="@id/distance"
+        android:layout_alignBaseline="@id/distance"
+        android:textSize="50sp"
+        android:text="cm" />
+
+    <ImageView
+        android:id="@+id/barrier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/barrier"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-20dp"
+        android:adjustViewBounds="true"
+        android:gravity="bottom|center_horizontal"/>
+
+</android.support.percent.PercentRelativeLayout>
